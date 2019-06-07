@@ -3,14 +3,23 @@ https://coolors.co/461220-8c2f39-b23a48-fcb9b2-fed0bb
 https://coolors.co/bcc4db-c0a9b0-7880b5-6987c9-6bbaec
 */
 
+
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
+
+@media all and (max-width: 1024px) {
+	h3, h2, p {
+	font-size: 10em;
+	}
+}
+
+
 body {
 	background-image: linear-gradient(95deg, #000000 75%, #CDACFA 10%);
-  	background-image: -moz-linear-gradient(175deg, #CDACFA 25%, #000000 10%);
+  	background-image: -moz-linear-gradient(170deg, #CDACFA 25%, #000000 10%);
   	background-repeat: no-repeat;
   	height: 200%;
   	font-family: 'Dosis', sans-serif;
