@@ -51,9 +51,10 @@ a {
 @media all and (max-width: 1024px) {
 	body {
 		height:500%;
+		width: 100%;
 	}
 	h3, h2, p {
-	font-size: 10em;
+	font-size: 2em;
 	}
 }
 
