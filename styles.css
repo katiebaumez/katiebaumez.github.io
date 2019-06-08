@@ -1,60 +1,104 @@
 /*
 https://coolors.co/461220-8c2f39-b23a48-fcb9b2-fed0bb
-https://coolors.co/bcc4db-c0a9b0-7880b5-6987c9-6bbaec
 */
-
 
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Dosis');
 
-
-@media all and (max-width: 1024px) {
-	h3, h2, p {
-	font-size: 10em;
-	}
-}
-
-
-body {
-	background-image: linear-gradient(95deg, #000000 75%, #CDACFA 10%);
-  	background-image: -moz-linear-gradient(170deg, #CDACFA 25%, #000000 10%);
+/*body {
+  	background-image: -moz-linear-gradient(160deg, #b23a48 10%, #fcb9b2);
   	background-repeat: no-repeat;
-  	height: 200%;
-  	font-family: 'Dosis', sans-serif;
-  	color: white;
+  	height: 100%;
+}*/
+
+#login:hover {
+	cursor: pointer;
 }
 
-h1 {
-	margin-top: 15%;
-	margin-left: 5%;
-	font-size: 4em;
+
+/*#loginMenu {
+	display: none;
+}*/
+
+.login-form {
+	display:none;
 }
 
-h3, h2, p {
-	margin-left: 5%;
-	margin-right: 25%;
-	font-size: 1.5em;
-}
+/*
+https://www.redbubble.com/people/magdalayna/works/32746332-groovy-yall?cat_context=u-stationery&grid_pos=24&p=sticker&rbs=ebffc091-66d7-46d5-8019-a8f57638e0c3&ref=shop_grid&searchTerm=stickers%20text#&gid=1&pid=3
+https://coolors.co/eae3f0-d9fff8-c7ffda-c4f4c7-9bb291
+https://css-tricks.com/adding-stroke-to-web-text/
+https://codepen.io/zephyo/pen/jXGQxV
+https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/
 
-h2 {
-	margin-top: 6%;
-}
+$pink: #F1B4C4;
+$orange: #FDB66A;
+$yellow: #FBFA9C;
+$blue: #C1DEE9;
+*/
 
-p {
-	margin-top: -1%;
-}
-
-a {
+.rainbowtext {
+	display:flex;
+	justify-content: center;
+	font-family: 'Lobster', cursive;
+	font-size: 150px;
+	font-weight: 900;
 	color: white;
+	  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+	text-shadow: 
+	/* Outline */
+	/*-1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000,*/
+	-2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000,
+	/* Pink */
+	8px 8px 0px #F1B4C4,
+	/* Outline */
+	9px 9px #000, 7px 7px #000, 9px 7px #000, 7px 9px #000,
+	/* Orange */
+	16px 16px 0px #d9fff8,
+	/* Outline */
+	15px 15px #000, 17px 17px #000, 15px 17px #000, 17px 15px #000,
+	/* Yellow */
+	24px 24px 0px #FBFA9C,
+	/* Outline */
+	23px 23px #000, 25px 25px #000, 25px 23px #000, 23px 25px #000,
+	/* Blue */
+	32px 32px 0px #C1DEE9,
+	/* Outline */
+	31px 31px #000, 33px 33px #000, 31px 33px #000, 33px 31px #000;
+	
 }
 
-@function set-notification-text-color($color) {
-  @if (lightness($color) > 50) {
-    @return #000000; // Lighter backgorund, return dark color
-  } @else {
-    @return #ffffff; // Darker background, return light color
-  }
+.fiutext {
+	display:flex;
+	justify-content: center;
+	font-family: 'Lobster', cursive;
+	font-size: 150px;
+	font-weight: 900;
+	color: white;
+	  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+	text-shadow: 
+	/* Outline */
+	/*-1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000,*/
+	-2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000,
+	/* Blue 1 */
+	8px 8px 0px #C1DEE9,
+	/* Outline */
+	9px 9px #000, 7px 7px #000, 9px 7px #000, 7px 9px #000,
+	/* Yellow 1 */
+	16px 16px 0px #FBFA9C,
+	/* Outline */
+	15px 15px #000, 17px 17px #000, 15px 17px #000, 17px 15px #000,
+	/* Blue 2 */
+	24px 24px 0px #C1DEE9,
+	/* Outline */
+	23px 23px #000, 25px 25px #000, 25px 23px #000, 23px 25px #000,
+	/* Yellow 2 */
+	32px 32px 0px #FBFA9C,
+	/* Outline */
+	31px 31px #000, 33px 33px #000, 31px 33px #000, 33px 31px #000;
+	
 }
-
