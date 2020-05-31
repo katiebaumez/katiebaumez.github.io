@@ -1,0 +1,206 @@
+* {
+    /* display:grid; */
+}
+
+body {
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto); */
+    display: flex;
+    justify-content: center;
+    background-color: rgb(252, 252, 252);
+    background-repeat: no-repeat;
+    font-family: 'Nunito';
+    color: rgb(102, 103, 104);
+    font-size: 1.1rem;
+    /* background-image: linear-gradient(100deg, #000000, #9FDCFD);
+  	background-image: -moz-linear-gradient(270deg, #000000 5%, #9FDCFD); */
+    
+}
+#body {
+    width: 100%;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark, .navbar-dark .navbar-nav .nav-link, 
+#navbarDropdown, .btn-outline, i
+ {
+    color: rgb(102, 103, 104);
+}
+
+.nav-link {
+    /* color:#9FDCFD; */
+    align-content: end;
+}
+
+.btn-outline {
+    /* border: #9FDCFD; */
+}
+.btn {
+    border: 2px solid black;
+    /* background-color: #9FDCFD; */
+    opacity: 80%;
+}
+
+
+.form-line {
+    justify-content: flex-end;
+}
+.navbar-expand-md {
+    justify-content: flex-end;
+}
+.navbar {
+    align-items: center;
+}
+
+
+.active {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.fas, .fab {
+    padding: 0 15px 0 0;
+}
+
+a {
+    color: inherit;
+}
+a:hover {
+    color:inherit;
+    font-weight: 600;
+}
+
+
+
+
+
+style, script {
+    display: none;
+}
+
+svg {
+    height:70%;
+}
+.manatee-div {
+    fill:rgb(135, 95, 211);
+    
+    /* transform: scale(80%); */
+}
+.left-head {
+    stroke:#fff;
+}
+
+iframe {
+    border: none;
+    box-shadow: 10px 10px  black;
+
+}
+
+
+#right-fin {
+    position:absolute;
+    animation: rotate-fin; 
+    animation-duration: 2s;
+    /* animation-name: fin-wave; */
+    /* animation-duration: 4s; */
+    /* transform: rotateX(180deg); */
+}
+@keyframes rotate-fin {
+    100% {transform: rotate(10deg)}
+}
+
+#kbnavbar, span.navbar-toggler-icon {
+    color: rgb(102, 103, 104);
+    align-items: end;
+}
+.kbprojects {
+    margin-top:70px;
+}
+.kbimg {
+   max-width: 400px;
+   border-radius:5%;
+   box-shadow: 10px 10px 20px 10px rgb(184, 185, 185, .2);
+   margin-right:5%;
+   margin-bottom:5%;
+}
+
+
+
+.jumbotron {
+    background-color:white;
+    background-image: url(images/corey-agopian-5y4ljzRrDFA-unsplash.jpg);
+    background-repeat: no-repeat;
+    
+    align-items: start;
+    color:black;
+    background-size: cover;
+    background-position: 0% 50%;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.jumbotronp {
+    background-color: white;
+    opacity: 60%;
+    padding:10px;
+    width:50%;
+}
+
+.jumbotron .btn {
+    background-color: white;
+    opacity: 60%;
+}
+.icons {
+    flex:row;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.footer {
+    background-color:none;
+    font-size:.8rem
+}
+
+
+
+
+/* About Page */
+.kbabout {
+    height:100%;
+}
+
+#kbaboutimg {
+    border-radius:2%;
+    max-width: 90%;
+    border: solid white 7px;
+    box-shadow: 10px 10px 20px 10px rgb(184, 185, 185, .3);
+}
