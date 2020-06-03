@@ -117,11 +117,17 @@ iframe {
     margin-top:70px;
 }
 .kbimg {
-   max-width: 400px;
+   max-width:400px;
    border-radius:5%;
    box-shadow: 10px 10px 20px 10px rgb(184, 185, 185, .2);
    margin-right:5%;
    margin-bottom:5%;
+}
+
+@media (max-width: 768px){
+    .kbimg {
+        max-width: 300px;
+    }
 }
 
 
@@ -185,9 +191,14 @@ a:visited {
     color: inherit;
 }
 
+
+
+/* Footer */
 .footer {
     background-color:none;
-    font-size:.8rem
+    font-size:.8rem;
+    margin-top: 20%;
+    
 }
 
 
