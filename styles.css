@@ -117,7 +117,10 @@ iframe {
     margin-top:70px;
 }
 .kbimg {
-   max-width:400px;
+    height:auto;
+   max-width:50%;
+   /* This is some weird trick to make the img work in Safari https://stackoverflow.com/questions/10760243/safari-image-size-auto-height-css */
+   align-self: flex-start;
    border-radius:5%;
    box-shadow: 10px 10px 20px 10px rgb(184, 185, 185, .2);
    margin-right:5%;
@@ -126,7 +129,7 @@ iframe {
 
 @media (max-width: 768px){
     .kbimg {
-        max-width: 300px;
+        max-width: 100%;
     }
 }
 
