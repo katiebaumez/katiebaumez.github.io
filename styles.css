@@ -10,8 +10,8 @@ body {
     justify-content: center;
     background-color: rgb(252, 252, 252);
     background-repeat: no-repeat;
-    font-family: 'Nunito';
-    color: rgb(102, 103, 104);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
     font-size: 1.1rem;
     /* background-image: linear-gradient(100deg, #000000, #9FDCFD);
   	background-image: -moz-linear-gradient(270deg, #000000 5%, #9FDCFD); */
@@ -24,7 +24,7 @@ body {
 .navbar-dark .navbar-brand, .navbar-dark, .navbar-dark .navbar-nav .nav-link, 
 #navbarDropdown, .btn-outline, i
  {
-    color: rgb(102, 103, 104);
+    color: rgb(0,0, 0);
 }
 
 .nav-link {
@@ -72,22 +72,163 @@ a:hover {
 
 
 
-
-
-style, script {
-    display: none;
+/*  ---------- text  ---------------*/
+h1 {
+    font-family: 'Playfair Display', serif;
 }
 
+
+
+.introheading {
+    display:inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+.introheadline {
+    font-size: 2.3em;
+}
+.pianosvg {
+    display: inline-block;
+}
+
+.ican {
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    margin-left: 6.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration-color: #FFCACE;
+    text-decoration-thickness: 3px; 
+}
+
+h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+
+
+/*  ---------- text  ---------------*/
 svg {
-    height:70%;
-}
-.manatee-div {
-    fill:rgb(135, 95, 211);
+    translate: 0% 0%;
     
-    /* transform: scale(80%); */
 }
-.left-head {
-    stroke:#fff;
+
+@media (min-width: 768px){
+    svg {
+        translate: 10% 0%;
+        width: 600px;
+        height: 500px;
+    }   
+}
+
+
+#Left-arm {
+    animation: rotatearmdown40deg .2s ease 10 alternate;
+    transform-origin: top right;
+    transform-box: fill-box;
+}
+
+#Sleeve {
+    animation: rotatearmdown40deg .2s ease 10 alternate;
+    transform-origin: top right;
+    transform-box: fill-box;
+}
+
+#Right-arm {
+    animation: rotatearmdown10deg .2s .3s ease 10 alternate;
+    transform-origin: top right;
+    transform-box: fill-box;
+}
+
+
+@keyframes rotatearmdown40deg {
+    from {
+          transform: rotateZ(-10deg);
+    }
+    to {
+            transform: rotateZ(-40deg);
+    }
+}
+
+@keyframes rotatearmdown10deg {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-10deg);
+    }
+}
+
+#Leaves {
+    animation: leavesblowing 10s ease;
+}
+
+@keyframes leavesblowing {
+    from{
+        transform: translate(0px,100px);
+    }
+    to {
+        transform: translate(100px,0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#kbnavbar, span.navbar-toggler-icon {
+    color: rgb(0, 0, 0);
+    align-items: end;
+}
+.kbprojects {
+    margin-bottom:70px;
+    max-width:90%;
+}
+
+#scaled-frame {
+    height:500px;
+   
+    /* zoom: .1;
+    -moz-transform: scale(.5);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0; */
+  }
+
+.kbimg {
+    height:200px;
+   /* This is some weird trick to make the img work in Safari https://stackoverflow.com/questions/10760243/safari-image-size-auto-height-css */
+   /* align-self: flex-start; */
+   border-radius:5%;
+   box-shadow: 10px 10px 20px 10px rgb(184, 185, 185, .2);
+   margin-right:5%;
+   margin-bottom:5%;
+   
+}
+
+
+@media (max-width: 768px){
+    .kbimg {
+        max-width: 100%;
+    }
+}
+
+.screenshotimg {
+    width:500px;
 }
 
 iframe {
@@ -96,45 +237,23 @@ iframe {
 
 }
 
-
-#right-fin {
-    position:absolute;
-    animation: rotate-fin; 
-    animation-duration: 2s;
-    /* animation-name: fin-wave; */
-    /* animation-duration: 4s; */
-    /* transform: rotateX(180deg); */
-}
-@keyframes rotate-fin {
-    100% {transform: rotate(10deg)}
-}
-
-#kbnavbar, span.navbar-toggler-icon {
-    color: rgb(102, 103, 104);
-    align-items: end;
-}
-.kbprojects {
-    margin-top:70px;
-}
-.kbimg {
-    height:auto;
-   max-width:50%;
-   /* This is some weird trick to make the img work in Safari https://stackoverflow.com/questions/10760243/safari-image-size-auto-height-css */
-   align-self: flex-start;
-   border-radius:5%;
-   box-shadow: 10px 10px 20px 10px rgb(184, 185, 185, .2);
-   margin-right:5%;
-   margin-bottom:5%;
-}
-
-@media (max-width: 768px){
-    .kbimg {
-        max-width: 100%;
-    }
+.iframe-column {
+    width:1000px;
 }
 
 
 
+
+
+.project-description {
+    margin-left: 10px;
+}
+
+.project-subtitle {
+    margin-right: 10px;
+    max-width:90%;
+}
+  
 .jumbotron {
     background-color:white;
     background-image: url(images/corey-agopian-5y4ljzRrDFA-unsplash.jpg);
@@ -218,3 +337,4 @@ a:visited {
     border: solid white 7px;
     box-shadow: 10px 10px 20px 10px rgb(184, 185, 185, .3);
 }
+
