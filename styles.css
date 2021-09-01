@@ -391,7 +391,8 @@ a:visited {
 
 .projectdiv {
     background-color: rgb(244, 176, 175, .4);
-    padding:10px
+    padding:10px;
+    margin-bottom: 20px;
 }
 .projectheading {
     text-align: center;
